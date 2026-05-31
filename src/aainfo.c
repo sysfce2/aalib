@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 #include "aalib.h"
 #include "aaint.h"
 int main(int argc, char **argv)

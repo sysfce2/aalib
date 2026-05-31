@@ -29,11 +29,11 @@ this permission notice are preserved on all copies.
 
 @titlepage
 
-@title{AA-lib @value{VERSION}}
-@subtitle{An ascii-art library}
-@subtitle{API-DESCRIPTION}
+@title AA-lib @value{VERSION}
+@subtitle An ascii-art library
+@subtitle API-DESCRIPTION
 
-@author{Jan Hubi@v cka & Kamil Toman}
+@author Jan Hubi@v cka & Kamil Toman
 @tex
 Dukelsk\'ych bojovn\'\i ku 1944 
 @end tex
@@ -61,7 +61,8 @@ Email: @code{hubicka@@freesoft.cz}
 @end tex
 @vskip 0pt plus 1filll
 
-@copyright{} 1997 @tex Jan Hubi\v cka \& Kamil Toman
+@tex
+@copyright{} 1997 Jan Hubi\v cka \& Kamil Toman
 @end tex
 
 Permission is granted to make and distribute verbatim
@@ -75,7 +76,8 @@ this permission notice are preserved on all copies.
 
 @ifinfo
 @top AA-lib @value{VERSION}
-@flushright 1.2
+@flushright
+1.2
 An ascii-art library
 API DESCRIPTION
 @value{DATE}
@@ -1318,7 +1320,7 @@ To write new driver is quite easy. You need to implement just few very basic
 functions (like initialization, drawing to screen etc...) and register it in
 the driver registry. There is separate drivers for screen, mouse and keyboard.
 
-@subsection Display driver
+@section Display driver
 Display driver is the most significant driver (of course) so it is recomended
 to implement it first. Its structure is as follows:
 
@@ -1431,7 +1433,7 @@ This function is used to enable/disable cursor. 1 means enable, 0 disable.
 Should be set to @code{NULL} if your hardware don't support this.
 @end deffn
 
-@subsection Keyboard driver
+@section Keyboard driver
 This driver is defined by structure:
 @example
 struct aa_kbddriver @{
@@ -1478,7 +1480,7 @@ for key when mouse driver is enabled. This way is not recomended for
 multitasking enviroments.
 @end deffn
 
-@subsection Mouse driver
+@section Mouse driver
 This driver is defined by structure:
 @example
 struct aa_mousedriver @{

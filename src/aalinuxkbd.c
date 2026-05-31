@@ -9,6 +9,7 @@
 
 #include "config.h"
 #ifdef LINUX_DRIVER
+#include <stdlib.h>
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -200,7 +201,7 @@ static void vt_to_here(int num)
 static int rawmode_init(void)
 {
     if (!closed)
-	return;
+	return (0);
     mypid = getpid();
     if (tty_fd == -1) {
 	tty_fd = fileno(stdin);
