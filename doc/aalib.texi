@@ -1512,7 +1512,7 @@ This function is used to show/disable mouse cursor.
 Should be set to @code{NULL} if not supported.
 @end deffn
 
-@include reference.texinfo
+@include reference.texi
 
 @node    Index,     , Reference, Top
 @c        node-name,    next, previous,        up

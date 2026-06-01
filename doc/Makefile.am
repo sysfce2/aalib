@@ -1,4 +1,4 @@
-info_TEXINFOS = aalib.texinfo
-EXTRA_DIST = reference.texinfo
+info_TEXINFOS = aalib.texi
+EXTRA_DIST = reference.texi
 
-aalib.texinfo: reference.texinfo
+aalib.texi: reference.texi
